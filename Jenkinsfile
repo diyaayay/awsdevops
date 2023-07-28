@@ -15,7 +15,7 @@ sh "docker build -t ${PROJECT_NAME} ."
 stage ("Docker Run"){
 steps{
 sh "(docker ps -s | grep ${PROJECT_NAME}) && (docker stop ${PROJECT_NAME} && docker rm ${PROJECT_NAME})"
-sh "docker build -t ${PROJECT_NAME ${PROJECT_NAME}:latest"
+sh "docker build -t ${PROJECT_NAME} ${PROJECT_NAME}:latest"
 
 
 }
