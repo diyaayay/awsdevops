@@ -7,7 +7,7 @@ stages{
 stage ("Docker Build"){
 steps{
 
-sh "docker build -t ${PROJECT_NAME ."
+sh "docker build -t ${PROJECT_NAME} ."
 
 
 }
